@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Fizzbuzz</title>
+	<script type="text/javascript" src="src/Fizzbuzz.js"></script>
+	<script type="text/javascript">
+		function runFizzbuzz (form) {
+			document.getElementById("result").innerHTML = new Fizzbuzz().getResult(form.number.value);
+			return false;
+		};
+	</script>
+</head>
+<body>
+	<h1>Fizzbuzz!!!</h1>
+	<form onSubmit="return runFizzbuzz(this);">
+		<label for="number">Enter a number:</label>
+		<input type="number" name="number" placeholder="8008135">
+		<input type="submit" value="Fizz? Buzz?">
+	</form>
+	<p id="result">Inner Html</p>
+</body>
+</html>
